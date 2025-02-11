@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{745D3FB5-23FB-408E-9959-E16CAC541C08}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsApp1</RootNamespace>
+    <AssemblyName>WindowsFormsApp1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v23.2, Version=23.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.Data.23.2.5\lib\net452\DevExpress.Data.v23.2.dll</HintPath>
+    </Reference>
+    <Reference Include="FParsec, Version=1.0.0.0, Culture=neutral, PublicKeyToken=40ccfc0a09edbb5d, processorArchitecture=MSIL">
+      <HintPath>..\packages\FParsec.1.1.1\lib\net45\FParsec.dll</HintPath>
+    </Reference>
+    <Reference Include="FParsecCS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=40ccfc0a09edbb5d, processorArchitecture=MSIL">
+      <HintPath>..\packages\FParsec.1.1.1\lib\net45\FParsecCS.dll</HintPath>
+    </Reference>
+    <Reference Include="FSharp.Core, Version=4.6.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\FSharp.Core.4.6.0\lib\net45\FSharp.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="MathNet.Numerics, Version=5.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MathNet.Numerics.5.0.0\lib\net461\MathNet.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="MathNet.Numerics.FSharp, Version=4.15.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MathNet.Numerics.FSharp.4.15.0\lib\net45\MathNet.Numerics.FSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="NCalc, Version=1.3.8.0, Culture=neutral, PublicKeyToken=973cde3f1cafed03, processorArchitecture=MSIL">
+      <HintPath>..\packages\ncalc.1.3.8\lib\NCalc.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Linq.Dynamic, Version=1.0.6132.35681, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Linq.Dynamic.1.0.8\lib\net40\System.Linq.Dynamic.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq.Dynamic.Core, Version=1.3.13.0, Culture=neutral, PublicKeyToken=0f07ec44de6ac832, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Linq.Dynamic.Core.1.3.13\lib\net46\System.Linq.Dynamic.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.2.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.4.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formbisection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formbisection.Designer.cs">
+      <DependentUpon>Formbisection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formcarmers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formcarmers.Designer.cs">
+      <DependentUpon>Formcarmers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formfalseposition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formfalseposition.Designer.cs">
+      <DependentUpon>Formfalseposition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formGauss.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formGauss.Designer.cs">
+      <DependentUpon>formGauss.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formLU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formLU.Designer.cs">
+      <DependentUpon>formLU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formnewton.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formnewton.Designer.cs">
+      <DependentUpon>Formnewton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formscant.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formscant.Designer.cs">
+      <DependentUpon>formscant.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formsimplefixedpoint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formsimplefixedpoint.Designer.cs">
+      <DependentUpon>Formsimplefixedpoint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formbisection.resx">
+      <DependentUpon>Formbisection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formcarmers.resx">
+      <DependentUpon>Formcarmers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formfalseposition.resx">
+      <DependentUpon>Formfalseposition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formGauss.resx">
+      <DependentUpon>formGauss.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formLU.resx">
+      <DependentUpon>formLU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formnewton.resx">
+      <DependentUpon>Formnewton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formscant.resx">
+      <DependentUpon>formscant.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formsimplefixedpoint.resx">
+      <DependentUpon>Formsimplefixedpoint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
