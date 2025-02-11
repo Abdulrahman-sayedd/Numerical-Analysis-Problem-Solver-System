@@ -23,7 +23,7 @@ Mathematical Computation: Custom numerical algorithms
 bash                 
 Copy                     
 Edit                                     
-git clone https://github.com/yourusername/numerical-analysis-solver.git                 
+git clone https://github.com/Abdulrahman-sayedd/Numerical-Analysis-Problem-Solver-System.git                           
 cd numerical-analysis-solver                     
  
 2️⃣ Open the project in Visual Studio                                   
